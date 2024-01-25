@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --blue: #0022ff;
+  --white-text: #ffffff;
+  --black-text: #000000;
+}
+
+header {
+  background-color: var(--white-text);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-thumbnail {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  background-color: var(--blue);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+    
+
+.menu-lines {
+  background-color: var(--white-text);
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    top: 8px;
+  }
+
+  .menu-icon:hover &::before {
+    transform: translateY(8px);
+  }
+
+  .menu-icon:hover &::after {
+    transform: translateY(-8px);
+  }
+
+.button-container{
+  display: flex;
+}
+
+.double-tap {
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+.nav-options {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: var(--black-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign-in-box {
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.sign-in {
+  color: var(--blue);
+}
+
+.try-it-free {
+  background-color: var(--blue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.try-it-free span {
+  color: var(--white-text);
+}
+
+.m-outter-container {
+  display: flex;
+  flex-direction: row; 
+  padding: 50px 100px;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 2em;
+}
+
+
+.m-h2 {
+  font-size: 2em;
+}
+
+.let-us {
+  font-size: 1.25em;
+}
+
+.description {
+  color: rgb(126, 126, 126);
+  padding: 10px 0 20px 0;
+}
+
+.sign-up-button {
+  padding: 10px 15px;
+  border: 1px solid var(--blue);
+  margin-right: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--blue);
+  font-weight: bold;
+  box-shadow: 5px 5px 5px -3px rgba(0,0,0,0.54);
+}
+
+.sign-up-button:hover {
+  background: var(--white-text);
+  color: var(--blue);
+  transition: 700ms;
+  transform: translateX(5px);
+}
+
+.chat-with-us {
+  padding: 10px 15px;
+  background-color: var(--white-text);
+  border: 1px solid var(--blue);
+  border-radius: 7px;
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px -3px rgba(0,0,0,0.54);
+}
+
+.chat-with-us:hover {
+  color: var(--white-text);
+  background-color: var(--blue);
+  transition: 700ms;
+  transform: translateX(5px);
+}
+
+.chat-icon {
+  padding-right: 10px;
+}
+
+.sign-in-container {
+  display: flex;
+  gap: .5em;
+  padding: 20px 0;
+  color: rgb(125, 125, 125);
+}
+
+.sign-in-link {
+  text-decoration: none;
+  color: rgb(125, 125, 125);
+}
+
+.sign-in-link:hover {
+  text-decoration: underline;
+}
+
+.trial {
+  display: flex;
+  gap: 2em;
+}
+
+ul {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+li::before {
+  content: '\2022';
+  color: var(--blue); 
+  display: inline-block;
+  width: 1em; 
+  margin-left: -1em;
+}
+
+#first-p {
+  margin: 0 auto;
+  width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  text-align: center;
+}
+
+#custome-image {
+  margin: 0;
+  padding: 0;
+  height: 250px;
+}
+
+#image-container {
+  display: flex;
+}
+
+#img-discription {
+  background-color: #0022ff;
+  border-radius: 0px 10px 10px 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 2em;
+}
